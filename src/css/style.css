@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
 
 html{
-    scroll-behavior: smooth; /* suavização da barra de scroll e da rolagem de tela */
+    scroll-behavior: smooth; 
 }
 
 body{
@@ -20,11 +20,11 @@ body{
     align-items: center;
     padding: 25px 0;
     max-width: 1170px;
-    margin: 0 auto; /* alinha o cabecalho no meio */
+    margin: 0 auto;
     flex-wrap: wrap;
 }
 
-@media(max-width: 624px){   /* media querys para responsividade*/
+@media(max-width: 624px){   
     .cabecalho{
         justify-content: center;
     }
@@ -38,7 +38,7 @@ body{
     }
 }
 
-.logo{        /* essa estilizaco pode ser feita porque esse elemento e um comonenete que se repete, e pode ser feito de uma maneira menos especifica para e aplicar a esse elemento em todos os lugares de atuacao*/
+.logo{ 
     display: flex;
     align-items: center;
     text-transform: uppercase;
@@ -64,6 +64,7 @@ body{
 }
 
 .cabecalho .navegacao .menu .item a{
+    border-radius: 5px;
     padding: 15px;
     transition: 0.3s ease-in-out;
 }
@@ -97,10 +98,9 @@ body{
     min-width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;    /* posiciona ao longo do eixo z */
-    filter: brightness(70%); /* escurece a imagem */
-
-    opacity: 0; /* esconde as imagens para mostrar só outra com outra classe*/
+    z-index: -1;    
+    filter: brightness(70%); 
+    opacity: 0; 
     transition: 0.3s ease-in-out;
 }
 
@@ -123,7 +123,7 @@ body{
 .conteudo-principal .paineis .titulo{
     color: #fff;
     text-transform: uppercase;
-    font-size: calc(1em + 1vw); /* calcula o tamanho da fonte de acordo com o tamanho da tela*/
+    font-size: calc(1em + 1vw); 
 }
 
 .conteudo-principal .paineis .seta{
@@ -134,16 +134,16 @@ body{
     width: 50px;
     height: 50px;
     position: absolute;
-    text-indent: 100%;   /* serve para esconder texto de um elemento mas e bom deixar o texto para leitores de tela*/
-    overflow: hidden;  /* serve para esconder texto de um elemento*/
+    text-indent: 100%;   
+    overflow: hidden;  
 }
 
-.conteudo-principal .paineis .seta.btn-voltar{ /* quando se tem 2 classes no mesmo elemento e queremos especificar qual queremos estilizar usamos dessa forma*/
+.conteudo-principal .paineis .seta.btn-voltar{ 
     left: 20px;
     transform: rotateY(180deg);
 }
 
-.conteudo-principal .paineis .seta.btn-avancar{ /* quando se tem 2 classes no mesmo elemento e queremos especificar qual queremos estilizar usamos dessa forma*/
+.conteudo-principal .paineis .seta.btn-avancar{
     right: 20px;
 }
 
@@ -173,7 +173,7 @@ body{
 .quem-somos .conteudo .informacoes .titulo{
     color: #1ED760;
     font-size: 50px;
-    margin-bottom: 20px;  /* espacamento entre elementos */
+    margin-bottom: 20px;  
 }
 
 .quem-somos .conteudo .informacoes .texto{
@@ -227,7 +227,7 @@ body{
     border: 2px solid #111;
     border-radius: 50%;
     padding: 15px;
-    width: 65px; /* arrendonda os icones / dimensoes desproporcionais */
+    width: 65px; 
     transition: 0.3s ease-in-out;
 }
 
