@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <meta name="description" content="Somos uma agência apaixonada por inovação, tecnologia e arte, aqui fazemos mais que um site, criamos uma experiência."> <!--  meta que cria a descrição nos sites de busca -->
+    <title>Agência XPTO</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="#" class="logo">
+            <img src="./src/imagens/cafe.gif" alt="Logo XPTO" class="imagem">
+            <span class="titulo">Agência XPTO</span>
+        </a>
+
+        <nav class="navegacao">
+            <ul class="menu">
+                <li class="item">
+                    <a href="#projetos">Projetos</a>
+                </li>
+
+                <li class="item">
+                    <a href="#quem-somos">Quem Somos</a>
+                </li>
+
+                <li class="item">
+                    <a href="#contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal" id="projetos"> <!-- id criado para direcionar os links da nevegacao por isso a escrita deve ser igual, mas o id pode ser usado tambem para utilizacao no JS-->
+        <section class="paineis">
+            <h1 class="titulo">Nossos Projetos</h1>
+
+            <div class="imagem-painel projeto1 mostrar"></div> <!-- imagems de fundos craidas, e a classe mostrar sera usada pelo JS para alterar qual sera mostrada, comecando com a priemira que ja vem por padrao-->
+            <div class="imagem-painel projeto2"></div> <!-- nomes diferentes como 1 e 2 diferenciar entre as divs pois sao imagens diferentes, mas uma classe igual para poder estilizar elas da mesma forma fora a imagem-->
+            <div class="imagem-painel projeto3"></div> <!-- usado divs pois facilita o dimensionamento posterior usando o background-image pelo css -->
+
+            <a href="#" id="btn-voltar" class="seta btn-voltar">voltar</a>
+            <a href="#" id="btn-avancar" class="seta btn-avancar">avançar</a>
+        </section>
+        <section class="quem-somos" id="quem-somos">
+            <div class="conteudo"> 
+                <div class="informacoes">
+                    <h2 class="titulo">Quem somos</h2>
+
+                    <p class="texto">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum quibusdam quasi culpa excepturi modi dolorum error tempora illo nihil aspernatur ipsa deserunt, totam suscipit accusantium. Recusandae quisquam voluptas neque vero!
+                    </p>
+                </div>
+
+                <img src="./src/imagens/composition-12.svg" class="imagem" alt="personagem com com celular na mão">
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape" id="contato">
+        <nav class="navegacao">
+            <a href="#" class="logo">
+                <img src="src/imagens/cafe.gif" alt="Logo XPTO" class="imagem">
+                <span class="titulo">Agência XPTO</span>
+            </a>
+
+            <div class="redes-sociais">
+                <a href="#" class="rede-social">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#" class="rede-social">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+
+                <a href="#" class="rede-social">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </nav>
+
+        <p class="copyright">Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./src/js/painel.js"></script>
+</body>
+</html>
